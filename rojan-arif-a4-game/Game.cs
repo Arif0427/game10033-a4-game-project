@@ -13,9 +13,14 @@ namespace MohawkGame2D
         /// <summary>
         ///     Setup runs once before the game loop begins.
         /// </summary>
+
+        Texture2D linkWalk = Graphics.LoadTexture("../../../../assets/graphics/link.png");
+
+
         public void Setup()
         {
-
+            Window.SetTitle("Link the Slime Killer");
+            Window.SetSize(1200, 800);
         }
 
         /// <summary>
@@ -23,7 +28,13 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
+            //Draw basic background and level
+            Window.ClearBackground(135, 205, 235);
+            Draw.SetLineSize(0);
+            Draw.SetFillColor(125);
+            Draw.Rectangle(0, 500, 1200, 300);
 
+            Graphics.Draw(linkWalk, 0, 0);
         }
     }
 
