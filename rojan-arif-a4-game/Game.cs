@@ -19,6 +19,9 @@ namespace MohawkGame2D
         {
             Window.SetTitle("Link the Slime Killer");
             Window.SetSize(1600, 900);
+
+            slime.Setup();
+
         }
 
         /// <summary>
